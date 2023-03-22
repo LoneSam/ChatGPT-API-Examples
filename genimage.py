@@ -10,4 +10,4 @@ response = openai.Image.create(
 )
 image_url = response['data'][0]['url']
 print(str(response))
-os.system('open '+image_url)
+os.system('open "'+image_url+'"')
